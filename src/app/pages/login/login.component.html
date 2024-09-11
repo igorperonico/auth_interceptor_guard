@@ -1,0 +1,20 @@
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-lg p-4">
+      <div class="card-body">
+        <h3 class="text-center mb-4">Login</h3>
+        <form class="login">
+          <div class="form-group mb-3">
+            <label for="email" class="form-label"><i class="fas fa-user me-2"></i>User name / Email</label>
+            <input type="text" id="email" name="EmailId" [(ngModel)]="login.email" class="form-control" placeholder="Enter your email">
+          </div>
+          <div class="form-group mb-4">
+            <label for="password" class="form-label"><i class="fas fa-lock me-2"></i>Password</label>
+            <input type="password" id="password" name="Password" [(ngModel)]="login.password" class="form-control" placeholder="Enter your password">
+          </div>
+          <button class="btn btn-primary w-100" (click)="onLogin()">
+            Log In Now <i class="fas fa-chevron-right ms-2"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
